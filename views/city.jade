@@ -1,0 +1,14 @@
+include partials/head.jade 
+include partials/navbar.jade 
+br
+br
+br
+include partials/headline.jade 
+br
+.container
+      .row
+        - for (var i = 1; i <= RajnumberOfImages; i++)
+              .col-md-6
+               .thumbnail
+                 img(src='/images/'+Rajcity+'/'+Rajcity+'-'+i+'.jpg')
+    include partials/jsIncludes.jade

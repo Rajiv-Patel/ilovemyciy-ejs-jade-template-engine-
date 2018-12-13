@@ -1,0 +1,22 @@
+<html>
+  <% include partials/head.ejs %>
+<body>
+  <% include partials/navbar.ejs %>
+  <br/><br/><br/>
+<% include partials/headline.ejs %>
+<br/>
+<!-- EJS template, Using forloop 1:29:00 using embedded java script EJS-->
+  <div class="container">
+          <div class="row">
+              <% for(var i=1;i<=RajnumberOfImages;i++) {%>
+              <div class="col-md-6">
+                 <div class="thumbnail">
+                 <img src="/images/<%=Rajcity%>/<%=Rajcity%>-<%=i%>.jpg"/>
+                 </div>
+              </div>
+              <%}%>
+          </div>
+  </div>
+<% include partials/jsincludes.ejs %>
+</body>
+</html>
